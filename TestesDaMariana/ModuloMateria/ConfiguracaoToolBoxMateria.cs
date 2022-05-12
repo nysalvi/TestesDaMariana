@@ -1,13 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TestesDaMariana.Compartilhado;
 
-namespace TestesDaMariana.ModuloDisciplina
+namespace TestesDaMariana.ModuloMateria
 {
-    public class ConfiguracaoToolBoxDisciplina
+    public class ConfiguracaoToolBoxMateria : ConfiguracaoToolBoxBase
     {
+        public override string TipoCadastro => "Cadastro de Matérias";
 
+        public override string TooltipInserir { get { return "Inserir uma nova matéria"; } }
+
+        public override string TooltipEditar { get { return "Editar uma matéria existente"; } }
+
+        public override string TooltipExcluir { get { return "Excluir uma matéria existente"; } }
+
+        public override string TooltipAgrupar { get { return "Agrupar matérias"; } }
+
+        public override bool AgruparHabilitado { get { return true; } }
     }
 }
