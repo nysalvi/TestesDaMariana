@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TestesDaMariana.Disciplina
+namespace TestesDaMariana.ModuloDisciplina
 {
-    public partial class Cadastro : Form
+    public partial class TelaCadastroDisciplinasForm : Form
     {
-        public Cadastro()
+        public TelaCadastroDisciplinasForm()
         {
             InitializeComponent();
         }

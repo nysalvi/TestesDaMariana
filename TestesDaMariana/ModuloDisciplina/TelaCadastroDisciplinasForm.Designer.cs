@@ -1,6 +1,6 @@
-﻿namespace TestesDaMariana.Disciplina
+﻿namespace TestesDaMariana.ModuloDisciplina
 {
-    partial class Cadastro
+    partial class TelaCadastroDisciplinasForm
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@
             this.maskedTextBoxNumero.Location = new System.Drawing.Point(91, 38);
             this.maskedTextBoxNumero.Mask = "0000000000";
             this.maskedTextBoxNumero.Name = "maskedTextBoxNumero";
-            this.maskedTextBoxNumero.Size = new System.Drawing.Size(100, 23);
+            this.maskedTextBoxNumero.Size = new System.Drawing.Size(221, 23);
             this.maskedTextBoxNumero.TabIndex = 1;
             this.maskedTextBoxNumero.ValidatingType = typeof(int);
             // 
@@ -65,14 +65,14 @@
             // 
             this.textBoxNome.Location = new System.Drawing.Point(91, 111);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(100, 23);
+            this.textBoxNome.Size = new System.Drawing.Size(221, 23);
             this.textBoxNome.TabIndex = 3;
             // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 270);
+            this.ClientSize = new System.Drawing.Size(431, 243);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.maskedTextBoxNumero);
