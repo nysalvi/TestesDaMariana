@@ -2,7 +2,7 @@
 
 namespace TestesDaMariana.ModuloDisciplina
 {
-    public class ConfiguracaoToolBoxMateria : ConfiguracaoToolBoxBase
+    public class ConfiguracaoToolBoxDisciplina : ConfiguracaoToolBoxBase
     {
         public override string TipoCadastro => "Cadastro de Disciplinas";
 

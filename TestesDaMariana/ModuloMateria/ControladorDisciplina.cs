@@ -11,7 +11,7 @@ namespace TestesDaMariana.ModuloMateria
     public class ControladorMateria : ControladorBase
     {
         private readonly IRepositorioMateria repositorioMaterias;
-        private TabelaMateriaControl tabelaMaterias;
+        private TabelaMateriasControl tabelaMaterias;
         public ControladorDisciplina(IRepositorioMateria repositorioMateria)
         {
             this.repositorioMaterias = repositorioMateria;

@@ -36,8 +36,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelSerie = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.labelSerie = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -114,15 +114,6 @@
             this.panel1.Size = new System.Drawing.Size(234, 37);
             this.panel1.TabIndex = 10;
             // 
-            // labelSerie
-            // 
-            this.labelSerie.AutoSize = true;
-            this.labelSerie.Location = new System.Drawing.Point(25, 216);
-            this.labelSerie.Name = "labelSerie";
-            this.labelSerie.Size = new System.Drawing.Size(35, 15);
-            this.labelSerie.TabIndex = 0;
-            this.labelSerie.Text = "Série:";
-            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -134,6 +125,15 @@
             this.radioButton2.Text = "2ª Série";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
+            // labelSerie
+            // 
+            this.labelSerie.AutoSize = true;
+            this.labelSerie.Location = new System.Drawing.Point(25, 216);
+            this.labelSerie.Name = "labelSerie";
+            this.labelSerie.Size = new System.Drawing.Size(35, 15);
+            this.labelSerie.TabIndex = 0;
+            this.labelSerie.Text = "Série:";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(79, 280);
@@ -142,6 +142,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Gravar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // button2
             // 
@@ -151,9 +152,9 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.buttonGravar_Click);
             // 
-            // Cadastro
+            // TelaCadastroMateriasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,7 +169,7 @@
             this.Controls.Add(this.maskedTextBoxNumero);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.label1);
-            this.Name = "Cadastro";
+            this.Name = "TelaCadastroMateriasForm";
             this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using Dominio.ModuloMateria;
+using TestesDaMariana.Compartilhado;
 using System.Windows.Forms;
 
 namespace TestesDaMariana.ModuloMateria
@@ -15,6 +12,29 @@ namespace TestesDaMariana.ModuloMateria
         public TabelaMateriasControl()
         {
             InitializeComponent();
+        }
+        public int ObtemNumeroMateriaSelecionada()
+        {
+            return dataGridView1.SelecionarNumero<int>();
+        }
+        private DataGridViewColumn[] ObterColunas()
+        {
+            var colunas = new DataGridViewColumn[]
+            {
+                new DataGridViewTextBoxColumn { DataPropertyName = "ID", HeaderText = "ID"},
+
+                new DataGridViewTextBoxColumn { DataPropertyName = "Nome", HeaderText = "Nome"},
+
+                new DataGridViewTextBoxColumn { DataPropertyName = "Disciplina", HeaderText = "Disciplina"},
+
+                new DataGridViewTextBoxColumn { DataPropertyName = "Serie", HeaderText = "Série"},
+            };
+
+            return colunas;
+        }
+        public void AtualizarRegistros(List<Materia> materias)
+        {
+            dataGridView1.DataSource = materias;
         }
     }
 }
