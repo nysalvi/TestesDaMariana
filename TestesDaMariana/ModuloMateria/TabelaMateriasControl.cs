@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TestesDaMariana.ModuloDisciplina
+namespace TestesDaMariana.ModuloMateria
 {
-    public partial class TabelaDisciplinasControl : UserControl
+    public partial class TabelaMateriasControl : UserControl
     {
-        public TabelaDisciplinasControl()
+        public TabelaMateriasControl()
         {
             InitializeComponent();
         }

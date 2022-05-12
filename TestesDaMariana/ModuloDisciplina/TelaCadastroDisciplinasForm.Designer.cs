@@ -32,6 +32,8 @@
             this.maskedTextBoxNumero = new System.Windows.Forms.MaskedTextBox();
             this.labelNome = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGravar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,16 +70,40 @@
             this.textBoxNome.Size = new System.Drawing.Size(221, 23);
             this.textBoxNome.TabIndex = 3;
             // 
-            // Cadastro
+            // btnCancelar
+            // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancelar.Location = new System.Drawing.Point(210, 167);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(102, 39);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGravar
+            // 
+            this.btnGravar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnGravar.Location = new System.Drawing.Point(91, 167);
+            this.btnGravar.Name = "btnGravar";
+            this.btnGravar.Size = new System.Drawing.Size(113, 39);
+            this.btnGravar.TabIndex = 8;
+            this.btnGravar.Text = "Gravar";
+            this.btnGravar.UseVisualStyleBackColor = true;
+            this.btnGravar.Click += new System.EventHandler(this.btnGravar_Click);
+            // 
+            // TelaCadastroDisciplinasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 243);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGravar);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.maskedTextBoxNumero);
             this.Controls.Add(this.label1);
-            this.Name = "Cadastro";
+            this.Name = "TelaCadastroDisciplinasForm";
             this.Text = "Cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -90,5 +116,7 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBoxNumero;
         private System.Windows.Forms.Label labelNome;
         private System.Windows.Forms.TextBox textBoxNome;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnGravar;
     }
 }

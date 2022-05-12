@@ -2,15 +2,19 @@
 using Dominio.ModuloMateria;
 using Dominio.Compartilhado;
 
-namespace Dominio.Disciplina
+namespace Dominio.ModuloDisciplina
 {
-    public class Disciplina : Entidade
+    public class Disciplina : Entidade<Disciplina>
     {
         private List<Materia> materias = new List<Materia>();
 
-        public Disciplina(int id, string titulo, List<Materia> materias) : base(id, titulo)
+        public Disciplina()
         {
-            this.materias = materias;
+
+        }
+        public override void Atualizar(Disciplina registro)
+        {
+            throw new System.NotImplementedException();
         }
 
         public override string ToString()

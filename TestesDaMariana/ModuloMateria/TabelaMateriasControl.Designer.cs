@@ -1,6 +1,6 @@
-﻿namespace TestesDaMariana.ModuloDisciplina
+﻿namespace TestesDaMariana.ModuloMateria
 {
-    partial class TabelaDisciplinasControl
+    partial class TabelaMateriasControl
     {
         /// <summary> 
         /// Required designer variable.

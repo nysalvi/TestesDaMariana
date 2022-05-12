@@ -11,13 +11,8 @@ namespace Dominio.Compartilhado
         private int id;
         private string titulo;
 
-        public Entidade(int id, string titulo)
-        {
-            this.id = id;
-            this.titulo = titulo;
-        }
-        public int ID => id;
-        public string Titulo => titulo;
+        public int ID { get; set; }
+        public string Titulo { get; set; };
         public abstract string Validar();
         public abstract void Atualizar(T registro);
         public abstract override string ToString();

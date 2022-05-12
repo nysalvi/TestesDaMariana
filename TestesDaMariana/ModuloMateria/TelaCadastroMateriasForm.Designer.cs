@@ -1,6 +1,6 @@
 ﻿namespace TestesDaMariana.ModuloMateria
 {
-    partial class Cadastro
+    partial class TelaCadastroMateriasForm
     {
         /// <summary>
         /// Required designer variable.

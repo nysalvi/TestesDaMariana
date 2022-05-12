@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestesDaMariana.ModuloMateria
 {
-    public partial class Cadastro : Form
+    public partial class TelaCadastroMateriasForm : Form
     {
-        public Cadastro()
+        public TelaCadastroMateriasForm()
         {
             InitializeComponent();
         }
