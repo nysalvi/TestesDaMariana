@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace TestesDaMariana.ModuloMateria
 {
-    public partial class TabelaMateriasControl : UserControl
+    public partial class TabelaMateriaControl : UserControl
     {
-        public TabelaMateriasControl()
+        public TabelaMateriaControl()
         {
             InitializeComponent();
         }

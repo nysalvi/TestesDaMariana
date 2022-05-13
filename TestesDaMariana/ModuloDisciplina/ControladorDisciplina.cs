@@ -88,7 +88,7 @@ namespace TestesDaMariana.ModuloDisciplina
 
         public override ConfiguracaoToolBoxBase ObtemConfiguracaoToolbox()
         {
-            return new ConfiguracaoToolBoxMateria();
+            return new ConfiguracaoToolBoxDisciplina();
         }
 
         private Disciplina ObtemDisciplinaSelecionado()

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="ModuloMateria\TabelaMateriasControl.cs">
+    <Compile Update="ModuloMateria\TabelaMateriaControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
@@ -23,10 +23,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ModuloTeste\" />
   </ItemGroup>
 
   <ItemGroup>

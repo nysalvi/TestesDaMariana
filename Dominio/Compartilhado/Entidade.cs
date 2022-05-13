@@ -12,9 +12,7 @@ namespace Dominio.Compartilhado
         private string titulo;
 
         public int ID { get; set; }
-        public string Titulo { get; set; };
-        public abstract string Validar();
-        public abstract void Atualizar(T registro);
+        public string Titulo { get; set; }
         public abstract override string ToString();
     }
 }

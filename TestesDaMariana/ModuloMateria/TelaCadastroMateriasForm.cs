@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using System.Windows.Forms;
 using Dominio.ModuloMateria;
+using FluentValidation.Results;
 
 namespace TestesDaMariana.ModuloMateria
 {
@@ -43,12 +36,21 @@ namespace TestesDaMariana.ModuloMateria
 
         private void buttonGravar_Click(object sender, EventArgs e)
         {
-            Close();
+
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
 
+        }
+        private void TelaCadastroMateriasForm_Load(object sender, EventArgs e)
+        {
+            TelaMain.Instancia.AtualizarRodape("");
+        }
+
+        private void TelaCadastroMateriasForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            TelaMain.Instancia.AtualizarRodape("");
         }
     }
 }

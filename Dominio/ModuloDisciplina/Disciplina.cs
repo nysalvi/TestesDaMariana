@@ -6,8 +6,6 @@ namespace Dominio.ModuloDisciplina
 {
     public class Disciplina : Entidade<Disciplina>
     {
-        private List<Materia> materias = new List<Materia>();
-
         public Disciplina()
         {
 

@@ -11,8 +11,8 @@ namespace TestesDaMariana.ModuloMateria
     public class ControladorMateria : ControladorBase
     {
         private readonly IRepositorioMateria repositorioMaterias;
-        private TabelaMateriasControl tabelaMaterias;
-        public ControladorDisciplina(IRepositorioMateria repositorioMateria)
+        private TabelaMateriaControl tabelaMaterias;
+        public ControladorMateria(IRepositorioMateria repositorioMateria)
         {
             this.repositorioMaterias = repositorioMateria;
         }
@@ -38,7 +38,7 @@ namespace TestesDaMariana.ModuloMateria
 
             if (materiaSelecionada == null)
             {
-                MessageBox.Show("Selecione uma disciplina primeiro",
+                MessageBox.Show("Selecione uma matéria primeiro",
                 "Edição de Disciplinas", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
@@ -80,7 +80,7 @@ namespace TestesDaMariana.ModuloMateria
         public override UserControl ObtemListagem()
         {
             //if (tabelaContatos == null)
-            tabelaMaterias = new TabelaMateriasControl();
+            tabelaMaterias = new TabelaMateriaControl();
 
             CarregarMaterias();
 
