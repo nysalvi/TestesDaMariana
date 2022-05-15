@@ -1,11 +1,13 @@
 using Newtonsoft.Json;
 using System.Windows.Forms;
 using System;
+using TestesMariana.Infra.Arquivos.Compartilhado;
+
 namespace TestesMariana
 {
     internal static class Program
     {
-        static JsonSerializer serializador = new JsonSerializer();
+        static ISerializador serializador = new SerializadorDadosEmJsonDotnet();
         static DataContext context = new DataContext(serializador);
 
         /// <summary>
@@ -17,9 +19,9 @@ namespace TestesMariana
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaMain());
+            Application.Run(new TelaMain(context));
 
-            context.Save();
+            context.GravarDados();
         }
         private static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {

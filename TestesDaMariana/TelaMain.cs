@@ -20,16 +20,17 @@ namespace TestesMariana
 
         public TelaMain(DataContext contextData)
         {
+            InitializeComponent();
+            InicializarRepositorios();
+
             Instancia = this;
 
-            toolStripStatusLabelRodape.Text = string.Empty;
+            statusStrip1.Text = string.Empty;
             toolStripLabelTipoCadastro.Text = string.Empty;
 
             this.contextoDados = contextData;
 
-            InitializeComponent();
 
-            InicializarRepositorios();
         }
         public static TelaMain Instancia
         {
@@ -99,6 +100,7 @@ namespace TestesMariana
             controladores.Add("Disciplina", new ControladorDisciplina(repositorioDisciplina));
             controladores.Add("Materia", new ControladorMateria(repositorioMateria));
             controladores.Add("Teste", new ControladorTeste(repositorioTeste));
+            controladores.Add("Questao", new ControladorTeste(repositorioQuestao));
         }
 
         private void ConfigurarTelaPrincipal(ToolStripMenuItem opcaoSelecionada)

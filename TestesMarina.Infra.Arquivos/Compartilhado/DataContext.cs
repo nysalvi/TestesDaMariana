@@ -52,16 +52,16 @@ namespace TestesMariana.Infra.Arquivos.Compartilhado
             var ctx = serializador.CarregarDadosDoArquivo();
 
             if (ctx.Materias.Any())
-                this.Materias.AddRange(ctx.Tarefas);
+                this.Materias.AddRange(ctx.Materias);
 
             if (ctx.Disciplinas.Any())
-                this.Disciplinas.AddRange(ctx.Contatos);
+                this.Disciplinas.AddRange(ctx.Disciplinas);
 
             if (ctx.Questoes.Any())
-                this.Questoes.AddRange(ctx.Compromissos);
+                this.Questoes.AddRange(ctx.Questoes);
 
             if (ctx.Testes.Any())
-                this.Testes.AddRange(ctx.Despesas);
+                this.Testes.AddRange(ctx.Testes);
         }
     }
 }

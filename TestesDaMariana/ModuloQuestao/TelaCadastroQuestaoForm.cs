@@ -21,7 +21,7 @@ namespace TestesMariana.ModuloQuestao
 
         private Questao questao;
 
-        public Func<Questao, ValidationResult> GravarRegistro { get; set; }
+        public Func<Questao, ValidationResult> GravarQuestao { get; set; }
 
         public Questao Questao
         {
@@ -62,7 +62,7 @@ namespace TestesMariana.ModuloQuestao
             questao.Disciplina = (Disciplina)comboBoxDisciplina.SelectedItem;
             questao.Materia = (Materia)comboBoxMateria.SelectedItem;
 
-            var resultadoValidacao = GravarRegistro(questao);
+            var resultadoValidacao = GravarQuestao(questao);
 
             if (resultadoValidacao.IsValid == false)
             {

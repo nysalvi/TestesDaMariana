@@ -1,5 +1,6 @@
 ﻿using System;
 using Dominio.ModuloDisciplina;
+using Dominio.ModuloMateria;
 using Dominio.Compartilhado;
 using Dominio.ModuloQuestao;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Dominio.ModuloTeste
 
         public Disciplina Disciplina { get; set; }
 
+        public Materia Materia { get; set; }
         public List<Questao> Questoes { get; set; }
 
         public override string ToString()

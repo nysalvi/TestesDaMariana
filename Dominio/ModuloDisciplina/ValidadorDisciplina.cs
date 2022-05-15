@@ -10,11 +10,11 @@ namespace Dominio.ModuloDisciplina
     {       
         public ValidadorDisciplina()
         {
-            RuleFor(x => x.Serie)
-                .NotNull().NotEmpty();
+            //RuleFor(x => x.Serie)
+           //     .NotNull().NotEmpty();
 
-            RuleFor(x => x.Disciplina)                
-                .NotNull().NotEmpty();
+           // RuleFor(x => x.Disciplina)                
+           //     .NotNull().NotEmpty();
             
         }
 

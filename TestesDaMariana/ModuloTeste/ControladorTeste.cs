@@ -19,9 +19,9 @@ namespace TestesMariana.ModuloTeste
         public override void Inserir()
         {
             TelaCadastroTestesForm tela = new TelaCadastroTestesForm();
-            tela.Testes = new Teste();
+            tela.Teste = new Teste();
 
-            tela.GravarRegistro = repositorioTestes.Inserir;
+            tela.GravarTeste = repositorioTestes.Inserir;
 
             DialogResult resultado = tela.ShowDialog();
 
@@ -44,7 +44,7 @@ namespace TestesMariana.ModuloTeste
 
             TelaCadastroTestesForm tela = new TelaCadastroTestesForm();
 
-            tela.Testes = testeSelecionado;
+            tela.Teste = testeSelecionado;
 
             tela.GravarTeste = repositorioTestes.Editar;
 

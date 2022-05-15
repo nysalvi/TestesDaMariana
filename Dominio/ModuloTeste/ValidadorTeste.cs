@@ -10,8 +10,8 @@ namespace Dominio.ModuloTeste
     {       
         public ValidadorTeste()
         {
-            RuleFor(x => x.Serie)
-                .NotNull().NotEmpty();
+            //RuleFor(x => x.Serie)
+            //   .NotNull().NotEmpty();
 
             RuleFor(x => x.Disciplina)                
                 .NotNull().NotEmpty();

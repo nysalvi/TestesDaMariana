@@ -10,8 +10,8 @@ namespace Dominio.ModuloQuestao
     {       
         public ValidadorQuestao()
         {
-            RuleFor(x => x.Serie)
-                .NotNull().NotEmpty();
+            //RuleFor(x => x.Serie)
+            //    .NotNull().NotEmpty();
 
             RuleFor(x => x.Disciplina)                
                 .NotNull().NotEmpty();

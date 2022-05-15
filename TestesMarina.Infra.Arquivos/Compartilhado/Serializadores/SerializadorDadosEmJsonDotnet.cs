@@ -2,7 +2,7 @@
 using System.IO;
 using TestesMariana.Infra.Arquivos.Compartilhado;
 
-namespace eAgenda.Infra.Arquivos
+namespace TestesMariana.Infra.Arquivos.Compartilhado
 {
     public class SerializadorDadosEmJsonDotnet : ISerializador
     {

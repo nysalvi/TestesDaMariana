@@ -21,7 +21,7 @@ namespace TestesMariana.ModuloQuestao
             TelaCadastroQuestaoForm tela = new TelaCadastroQuestaoForm();
             tela.Questao = new Questao();
 
-            tela.GravarRegistro = repositorioQuestao.Inserir;
+            tela.GravarQuestao = repositorioQuestao.Inserir;
 
             DialogResult resultado = tela.ShowDialog();
 

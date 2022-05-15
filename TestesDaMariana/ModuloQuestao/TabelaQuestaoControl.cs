@@ -11,7 +11,7 @@ namespace TestesMariana.ModuloQuestao
         {
             InitializeComponent();
         }
-        public int ObtemNumeroTarefaSelecionada()
+        public int ObtemNumeroQuestaoSelecionada()
         {
             return dataGridView1.SelecionarNumero<int>();
         }
