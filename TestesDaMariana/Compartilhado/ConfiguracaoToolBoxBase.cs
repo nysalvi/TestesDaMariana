@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestesDaMariana.Compartilhado
+namespace TestesMariana.Compartilhado
 {
     public abstract class ConfiguracaoToolBoxBase
     {
@@ -24,6 +24,7 @@ namespace TestesDaMariana.Compartilhado
 
         public virtual string TooltipAgrupar { get; }
 
+        public virtual string TooltipPDF { get; }
 
         public virtual bool InserirHabilitado { get { return true; } }
 
@@ -38,5 +39,7 @@ namespace TestesDaMariana.Compartilhado
         public virtual bool FiltrarHabilitado { get { return false; } }
 
         public virtual bool AgruparHabilitado { get { return false; } }
+
+        public virtual bool PDFHabilitado { get; }
     }
 }

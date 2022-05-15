@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
 using System.Windows.Forms;
 using System;
-namespace TestesDaMariana
+namespace TestesMariana
 {
     internal static class Program
     {

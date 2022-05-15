@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 
 using Dominio.ModuloMateria;
-using TestesDaMariana.Compartilhado;
+using TestesMariana.Compartilhado;
 using System.Windows.Forms;
 
-namespace TestesDaMariana.ModuloMateria
+namespace TestesMariana.ModuloMateria
 {
     public partial class TabelaMateriaControl : UserControl
     {

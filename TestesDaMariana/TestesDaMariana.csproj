@@ -31,6 +31,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Dominio\Dominio.csproj" />
+    <ProjectReference Include="..\TestesMarina.Infra.Arquivos\TestesMariana.Infra.Arquivos.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using TestesDaMariana.Compartilhado;
+using TestesMariana.Compartilhado;
 using Dominio;
 using Dominio.ModuloMateria;
 
 
-namespace TestesDaMariana.ModuloMateria
+namespace TestesMariana.ModuloMateria
 {
     public class ControladorMateria : ControladorBase
     {
@@ -94,7 +94,7 @@ namespace TestesDaMariana.ModuloMateria
 
         private Materia ObtemMateriaSelecionada()
         {
-            var numero = tabelaMaterias.ObtemNumeroDisciplinaSelecionada();
+            var numero = tabelaMaterias.ObtemNumeroMateriaSelecionada();
 
             return repositorioMaterias.SelecionarPorNumero(numero);
         }
@@ -105,7 +105,7 @@ namespace TestesDaMariana.ModuloMateria
 
             tabelaMaterias.AtualizarRegistros(materias);
 
-            TelaMain.Instancia.AtualizarRodape($"Visualizando {materias.Count} contato(s)");
+            TelaMain.Instancia.AtualizarRodape($"Visualizando {materias.Count} matéria(s)");
 
         }
     }

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Dominio.Compartilhado
 {
-    public class Repositorio<>
+    public class Repositorio<T> where T : Entidade<T>
     {
         private readonly List<T> entidadeList;
         public int Count => entidadeList.Count;
@@ -22,7 +23,7 @@ namespace Dominio.Compartilhado
         }
         public void Inserir(T entidade)
         {
-            entidade.Numero = entidade.Total++;
+            //entidade.Numero = entidade.Total++;
             entidadeList.Add(entidade);
         }
 

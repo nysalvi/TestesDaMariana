@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TestesDaMariana.Properties {
+namespace TestesMariana.Properties {
     using System;    
     
     /// <summary>

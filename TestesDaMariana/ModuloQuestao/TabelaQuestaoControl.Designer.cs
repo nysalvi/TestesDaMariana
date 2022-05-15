@@ -1,6 +1,6 @@
-﻿namespace TestesDaMariana.ModuloQuestao
+﻿namespace TestesMariana.ModuloQuestao
 {
-    partial class TelaQuestaoControl
+    partial class TabelaQuestaoControl
     {
         /// <summary> 
         /// Required designer variable.

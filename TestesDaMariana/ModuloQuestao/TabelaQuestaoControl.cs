@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using Dominio.ModuloQuestao;
-using TestesDaMariana.Compartilhado;
+using TestesMariana.Compartilhado;
 using System.Windows.Forms;
 
-namespace TestesDaMariana.ModuloQuestao
+namespace TestesMariana.ModuloQuestao
 {
-    public partial class TelaQuestaoControl : UserControl
+    public partial class TabelaQuestaoControl : UserControl
     {
-        public TelaQuestaoControl()
+        public TabelaQuestaoControl()
         {
             InitializeComponent();
         }

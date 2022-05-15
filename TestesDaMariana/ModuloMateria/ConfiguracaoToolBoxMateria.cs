@@ -1,6 +1,6 @@
-﻿using TestesDaMariana.Compartilhado;
+﻿using TestesMariana.Compartilhado;
 
-namespace TestesDaMariana.ModuloMateria
+namespace TestesMariana.ModuloMateria
 {
     public class ConfiguracaoToolBoxMateria : ConfiguracaoToolBoxBase
     {

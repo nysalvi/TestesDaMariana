@@ -1,4 +1,4 @@
-﻿namespace TestesDaMariana
+﻿namespace TestesMariana
 {
     partial class TelaMain
     {

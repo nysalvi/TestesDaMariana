@@ -1,11 +1,11 @@
-﻿using TestesDaMariana.Compartilhado;
+﻿using TestesMariana.Compartilhado;
 using Dominio;
 using Dominio.ModuloDisciplina;
 using Dominio.Compartilhado;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace TestesDaMariana.ModuloDisciplina
+namespace TestesMariana.ModuloDisciplina
 {
     public class ControladorDisciplina : ControladorBase
     {

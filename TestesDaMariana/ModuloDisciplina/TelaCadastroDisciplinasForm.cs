@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using Dominio.ModuloDisciplina;
 using FluentValidation.Results;
 
-namespace TestesDaMariana.ModuloDisciplina
+namespace TestesMariana.ModuloDisciplina
 {
     public partial class TelaCadastroDisciplinasForm : Form
     {
@@ -12,7 +12,6 @@ namespace TestesDaMariana.ModuloDisciplina
         {
             InitializeComponent();
         }
-
         private Disciplina disciplina;
 
         public Func<Disciplina, ValidationResult> GravarRegistro { get; set; }
@@ -24,14 +23,14 @@ namespace TestesDaMariana.ModuloDisciplina
             {
                 disciplina = value;
 
-                maskedTextBoxNumero.Text = disciplina.ID.ToString();
+                maskedTextBoxNumero.Text = disciplina.Numero.ToString();
                 textBoxNome.Text = disciplina.Titulo;
             }
         }
         private void btnGravar_Click(object sender, EventArgs e)
         {
             disciplina.Titulo = textBoxNome.Text;
-            disciplina.ID = int.Parse(maskedTextBoxNumero.Text);
+            disciplina.Numero = int.Parse(maskedTextBoxNumero.Text);
 
             var resultadoValidacao = GravarRegistro(disciplina);
 

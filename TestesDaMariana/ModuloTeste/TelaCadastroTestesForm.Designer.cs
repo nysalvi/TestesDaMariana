@@ -1,4 +1,4 @@
-﻿namespace TestesDaMariana.ModuloTeste
+﻿namespace TestesMariana.ModuloTeste
 {
     partial class TelaCadastroTestesForm
     {

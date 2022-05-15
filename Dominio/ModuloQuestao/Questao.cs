@@ -18,7 +18,17 @@ namespace Dominio.ModuloQuestao
         }
         public Disciplina Disciplina { get; set; }
         public Materia Materia { get; set; }
+        private Alternativa correta;
         public List<Alternativa> Alternativas { get; set; }
+
+        public Alternativa Correta
+        {
+            get
+            {
+                correta = GetCorreta();
+                return correta;
+            }
+        }
         public override string ToString()
         {
             throw new NotImplementedException();

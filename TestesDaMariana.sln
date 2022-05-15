@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dominio", "Dominio\Dominio.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arquivos", "Arquivos", "{6552943B-9F4A-43E0-A836-773AA9D64FD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestesMarina.Infra.Arquivos", "TestesMarina.Infra.Arquivos\TestesMarina.Infra.Arquivos.csproj", "{A76115D4-D594-400E-9D86-9C782969C7E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestesMariana.Infra.Arquivos", "TestesMarina.Infra.Arquivos\TestesMariana.Infra.Arquivos.csproj", "{A76115D4-D594-400E-9D86-9C782969C7E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

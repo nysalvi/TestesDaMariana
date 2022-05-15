@@ -1,14 +1,15 @@
 ﻿using System;
 using Dominio.ModuloDisciplina;
+using Dominio.Compartilhado;
 using Dominio.ModuloQuestao;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio.Teste
+namespace Dominio.ModuloTeste
 {
-    public class Teste
+    public class Teste : Entidade<Teste>
     {
         public DateTime Data { get; set; }
 
@@ -17,5 +18,10 @@ namespace Dominio.Teste
         public Disciplina Disciplina { get; set; }
 
         public List<Questao> Questoes { get; set; }
+
+        public override string ToString()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

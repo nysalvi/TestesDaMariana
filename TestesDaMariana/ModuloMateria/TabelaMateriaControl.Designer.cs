@@ -1,4 +1,4 @@
-﻿namespace TestesDaMariana.ModuloMateria
+﻿namespace TestesMariana.ModuloMateria
 {
     partial class TabelaMateriaControl
     {

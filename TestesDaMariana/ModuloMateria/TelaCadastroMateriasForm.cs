@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using Dominio.ModuloMateria;
 using FluentValidation.Results;
 
-namespace TestesDaMariana.ModuloMateria
+namespace TestesMariana.ModuloMateria
 {
     public partial class TelaCadastroMateriasForm : Form
     {
@@ -22,7 +22,7 @@ namespace TestesDaMariana.ModuloMateria
             {
                 materia = value;
 
-                maskedTextBoxNumero.Text = materia.ID.ToString();
+                maskedTextBoxNumero.Text = materia.Numero.ToString();
                 textBoxNome.Text = materia.Titulo;
                 comboBox1.SelectedItem = materia.Disciplina;
                 

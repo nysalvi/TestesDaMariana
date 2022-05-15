@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 
 using Dominio.ModuloDisciplina;
-using TestesDaMariana.Compartilhado;
+using TestesMariana.Compartilhado;
 using System.Windows.Forms;
 
-namespace TestesDaMariana.ModuloDisciplina
+namespace TestesMariana.ModuloDisciplina
 {
     public partial class TabelaDisciplinaControl : UserControl
     {

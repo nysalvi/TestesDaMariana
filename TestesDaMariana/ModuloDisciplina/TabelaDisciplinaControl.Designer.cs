@@ -1,4 +1,4 @@
-﻿namespace TestesDaMariana.ModuloDisciplina
+﻿namespace TestesMariana.ModuloDisciplina
 {
     partial class TabelaDisciplinaControl
     {

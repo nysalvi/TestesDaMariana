@@ -1,9 +1,16 @@
 ﻿using System.Windows.Forms;
 using System;
 using System.Collections.Generic;
+using TestesMariana.Compartilhado;
+using TestesMariana.Infra.Arquivos.Compartilhado;
+using TestesMariana.ModuloDisciplina;
+using TestesMariana.ModuloTeste;
+using TestesMariana.ModuloMateria;
+using TestesMariana.Infra.Arquivos.ModuloTeste;
+using TestesMariana.Infra.Arquivos.ModuloMateria;
+using TestesMariana.Infra.Arquivos.ModuloDisciplina;
 
-
-namespace TestesDaMariana
+namespace TestesMariana
 {
     public partial class TelaMain : Form
     {
@@ -24,7 +31,7 @@ namespace TestesDaMariana
 
             InicializarRepositorios();
         }
-        public static TelaPrincipalForm Instancia
+        public static TelaMain Instancia
         {
             get;
             private set;
@@ -32,7 +39,7 @@ namespace TestesDaMariana
 
         public void AtualizarRodape(string mensagem)
         {
-            labelRodape.Text = mensagem;
+            toolStripStatusLabelRodape.Text = mensagem;
         }
 
 
@@ -106,13 +113,13 @@ namespace TestesDaMariana
         }
         private void ConfigurarToolbox()
         {
-            ConfiguracaoToolboxBase configuracao = controlador.ObtemConfiguracaoToolbox();
+            ConfiguracaoToolBoxBase configuracao = controlador.ObtemConfiguracaoToolbox();
 
             if (configuracao != null)
             {
                 toolbox.Enabled = true;
 
-                labelTipoCadastro.Text = configuracao.TipoCadastro;
+                toolStripLabelTipoCadastro.Text = configuracao.TipoCadastro;
 
                 ConfigurarTooltips(configuracao);
 
@@ -131,14 +138,14 @@ namespace TestesDaMariana
 
             panelMain.Controls.Add(listagemControl);
         }
-        private void ConfigurarBotoes(ConfiguracaoToolboxBase configuracao)
+        private void ConfigurarBotoes(ConfiguracaoToolBoxBase configuracao)
         {
             toolStripButtonInserir.Enabled = configuracao.InserirHabilitado;
             toolStripButtonEditar.Enabled = configuracao.EditarHabilitado;
             toolStripButtonExcluir.Enabled = configuracao.ExcluirHabilitado;
             toolStripButtonPDF.Enabled = configuracao.PDFHabilitado;
         }
-        private void ConfigurarTooltips(ConfiguracaoToolboxBase configuracao)
+        private void ConfigurarTooltips(ConfiguracaoToolBoxBase configuracao)
         {
             toolStripButtonInserir.ToolTipText = configuracao.TooltipInserir;
             toolStripButtonEditar.ToolTipText = configuracao.TooltipEditar;
