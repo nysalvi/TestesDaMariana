@@ -6,7 +6,7 @@ namespace TestesMariana.Infra.Arquivos.Compartilhado
 {
     public class SerializadorDadosEmJsonDotnet : ISerializador
     {
-        private const string arquivo = @"C:\temp\dados.json";
+        private string arquivo = Directory.GetCurrentDirectory() + "\\save.json";
 
         public DataContext CarregarDadosDoArquivo()
         {

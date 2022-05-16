@@ -38,5 +38,8 @@ namespace Dominio.ModuloQuestao
         {
             return Alternativas.Find(x => x.Correta);
         }
+        public override void Atualizar(Questao registro)
+        {
+        }
     }
 }

@@ -11,5 +11,7 @@ namespace Dominio.Compartilhado
         public int Numero { get; set; }
         public string Titulo { get; set; }
         public abstract override string ToString();
+
+        public abstract void Atualizar(T registro);
     }
 }

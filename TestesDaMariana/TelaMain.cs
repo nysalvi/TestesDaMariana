@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using TestesMariana.Compartilhado;
 using TestesMariana.Infra.Arquivos.Compartilhado;
 using TestesMariana.ModuloDisciplina;
+using TestesMariana.ModuloQuestao;
 using TestesMariana.ModuloTeste;
 using TestesMariana.ModuloMateria;
 using TestesMariana.Infra.Arquivos.ModuloTeste;
+using TestesMariana.Infra.Arquivos.ModuloQuestao;
 using TestesMariana.Infra.Arquivos.ModuloMateria;
 using TestesMariana.Infra.Arquivos.ModuloDisciplina;
 
@@ -21,7 +23,6 @@ namespace TestesMariana
         public TelaMain(DataContext contextData)
         {
             InitializeComponent();
-            InicializarRepositorios();
 
             Instancia = this;
 
@@ -30,6 +31,7 @@ namespace TestesMariana
 
             this.contextoDados = contextData;
 
+            InicializarRepositorios();
 
         }
         public static TelaMain Instancia
@@ -40,7 +42,7 @@ namespace TestesMariana
 
         public void AtualizarRodape(string mensagem)
         {
-            toolStripStatusLabelRodape.Text = mensagem;
+            toolStripStatusLabelRodape.Text = mensagem;            
         }
 
 
@@ -94,13 +96,14 @@ namespace TestesMariana
             var repositorioDisciplina = new RepositorioDisciplinaEmArquivo(contextoDados);
             var repositorioMateria = new RepositorioMateriaEmArquivo(contextoDados);
             var repositorioTeste = new RepositorioTesteEmArquivo(contextoDados);
+            var repositorioQuestao = new RepositorioQuestaoEmArquivo(contextoDados);
 
             controladores = new Dictionary<string, ControladorBase>();
 
             controladores.Add("Disciplina", new ControladorDisciplina(repositorioDisciplina));
             controladores.Add("Materia", new ControladorMateria(repositorioMateria));
             controladores.Add("Teste", new ControladorTeste(repositorioTeste));
-            controladores.Add("Questao", new ControladorTeste(repositorioQuestao));
+            controladores.Add("Questao", new ControladorQuestao(repositorioQuestao));
         }
 
         private void ConfigurarTelaPrincipal(ToolStripMenuItem opcaoSelecionada)

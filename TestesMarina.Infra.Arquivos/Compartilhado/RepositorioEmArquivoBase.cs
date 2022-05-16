@@ -42,7 +42,7 @@ namespace TestesMariana.Infra.Arquivos.Compartilhado
             return resultadoValidacao;
         }
 
-        /*
+        
         public virtual ValidationResult Editar(T registro)
         {
             var validator = ObterValidador();
@@ -65,7 +65,7 @@ namespace TestesMariana.Infra.Arquivos.Compartilhado
 
             return resultadoValidacao;
         }
-        */
+        
         public virtual ValidationResult Excluir(T registro)
         {
             var resultadoValidacao = new ValidationResult();

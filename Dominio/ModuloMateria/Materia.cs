@@ -20,6 +20,9 @@ namespace Dominio.ModuloMateria
         {
             throw new System.NotImplementedException();
         }
+        public override void Atualizar(Materia registro)
+        {
+        }
     }
 }
 

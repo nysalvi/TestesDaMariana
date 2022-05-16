@@ -9,5 +9,8 @@ namespace Dominio.ModuloAlternativa
         {
             throw new System.NotImplementedException();
         }
+        public override void Atualizar(Alternativa registro)
+        {
+        }
     }
 }

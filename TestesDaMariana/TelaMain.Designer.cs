@@ -45,16 +45,19 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemDisclina = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemTeste = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemMatéria = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemMateria = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.toolbox.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolbox
             // 
             this.toolbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolbox.Enabled = false;
             this.toolbox.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator3,
             this.toolStripButtonInserir,
@@ -171,7 +174,7 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemDisclina,
             this.toolStripMenuItemTeste,
-            this.toolStripMenuItemMatéria});
+            this.toolStripMenuItemMateria});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
             this.toolStripMenuItem1.Text = "Menu";
@@ -190,20 +193,30 @@
             this.toolStripMenuItemTeste.Text = "Teste";
             this.toolStripMenuItemTeste.Click += new System.EventHandler(this.toolStripMenuItemTeste_Click);
             // 
-            // toolStripMenuItemMatéria
+            // toolStripMenuItemMateria
             // 
-            this.toolStripMenuItemMatéria.Name = "toolStripMenuItemMatéria";
-            this.toolStripMenuItemMatéria.Size = new System.Drawing.Size(125, 22);
-            this.toolStripMenuItemMatéria.Text = "Matéria";
-            this.toolStripMenuItemMatéria.Click += new System.EventHandler(this.toolStripMenuItemMatéria_Click);
+            this.toolStripMenuItemMateria.Name = "toolStripMenuItemMateria";
+            this.toolStripMenuItemMateria.Size = new System.Drawing.Size(125, 22);
+            this.toolStripMenuItemMateria.Text = "Materia";
+            this.toolStripMenuItemMateria.Click += new System.EventHandler(this.toolStripMenuItemMatéria_Click);
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.checkedListBox1);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 22);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(800, 379);
             this.panelMain.TabIndex = 3;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(0, 0);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(800, 379);
+            this.checkedListBox1.TabIndex = 0;
             // 
             // TelaMain
             // 
@@ -223,6 +236,7 @@
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panelMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +262,7 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.ToolStripLabel toolStripLabelTipoCadastro;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelRodape;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemMateria;
     }
 }

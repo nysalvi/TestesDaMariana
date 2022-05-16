@@ -25,5 +25,8 @@ namespace Dominio.ModuloTeste
         {
             throw new NotImplementedException();
         }
+        public override void Atualizar(Teste registro)
+        {
+        }
     }
 }

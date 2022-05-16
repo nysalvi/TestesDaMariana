@@ -14,6 +14,9 @@ namespace Dominio.ModuloDisciplina
         {
             throw new System.NotImplementedException();
         }
+        public override void Atualizar(Disciplina registro)
+        {
+        }
     }
 
 }
